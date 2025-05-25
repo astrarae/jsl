@@ -8,11 +8,15 @@
 
 
 @media (max-width: 1025px){
+    html,body{
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
     body::before{
     
         padding: 0;
         margin-left: 0px;
-        width: 120%;
+        width: 220%;
         overflow-y: auto;
         
     }

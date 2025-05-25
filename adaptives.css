@@ -9,8 +9,8 @@
 
 @media (max-width: 1025px){
     html,body{
-        overflow-y: hidden;
         overflow-x: hidden;
+        overflow-y: scroll;
     }
     body::before{
     

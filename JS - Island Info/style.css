@@ -1,0 +1,116 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: grey;
+}
+
+body::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(3, 96, 251, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  transition: 0.5s;
+}
+
+.background-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+body.loaded::before {
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
+}
+
+nav{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.back-to-menu {
+    height: 70px;
+    width: 210px;
+    padding: 15px 200px;
+    background-color: transparent;
+}
+.back-to-menu button{
+    border: 3px solid whitesmoke;
+    border-radius: 7px;
+    outline: none;
+    background-color: transparent;
+    color: whitesmoke;
+    font-family: 'Philosopher',sans-serif;
+    font-size: 37px;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    transition: 0.3s ease;
+}
+.back-to-menu button:hover{
+    -webkit-backdrop-filter: blur(0);
+    backdrop-filter: blur(0);
+}
+
+nav p{
+    padding: 15px 200px;
+    font-family: 'Philosopher',sans-serif;
+    font-weight: 700;
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+.home{
+   
+    width: 100%;
+    padding: 15px 200px;
+    position: relative;
+    top: 25%;
+    
+}
+
+.home-descr{
+    width: 37%;
+}
+
+.home-title1{
+    font-size: 65px;
+    font-weight: 700;
+    font-family:sans-serif;
+    color: whitesmoke;
+    
+}
+.home-title2{
+    font-size: 38px;
+    font-weight: 300;
+    font-family:sans-serif;
+    color: whitesmoke;
+    
+}
+
+.home-descr p{
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: 'Philosopher',sans-serif;
+    color: whitesmoke;
+}

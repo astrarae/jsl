@@ -1,0 +1,158 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(3, 96, 251, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 200px;
+    transition: 0.3s ease;
+}
+
+p{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Philosopher',sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+}
+
+
+
+a{
+    transform: scale(1.15);
+    transition: 0.3s ease;
+}
+
+a:hover{
+    -webkit-text-stroke: 2px #fff;
+    color:transparent;
+
+}
+
+.nav-logo{
+    position: relative;
+    left: 4%;
+}
+
+.nav-logo img{
+    width: 6vw;
+    height: 9vh;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    position: relative;
+    right: 4%;
+    gap: 40px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Philosopher',sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+    
+}
+
+
+.dropdown a{
+    background-color: transparent !important;
+    border: none !important;
+    position: relative !important;
+    bottom: 10% !important;
+}
+
+.dropdown-menu{
+    border: 2px solid whitesmoke !important;
+    background-color: transparent !important;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px) !important;
+    transition: 0.3s ease;
+}
+.video-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.home{
+    padding: 5px 200px;
+    position: relative;
+    top: 12%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.home-title p{
+    font-family: sans-serif;
+    
+}
+
+.javascript-home-title{
+    font-size: 900;
+    font-size: 60px;
+    
+}
+
+.javascript-home-title2{
+    font-size: 45px;
+    font-weight: 700;
+    
+}
+
+.home-descr p{
+    font-size: 20px;
+    width: 50%;
+}
+
+.home-button{
+    width: 170px;
+    height: 60px;
+}
+.home-button button{
+    height: 100%;
+    width: 100%;
+    border: 1px solid whitesmoke;
+    border-radius: 7px;
+    outline: none;
+    color: whitesmoke;
+    font-family: 'Philosopher',sans-serif;
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    transition: 0.3s ease;
+}
+.home-button button:hover{
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0);
+}

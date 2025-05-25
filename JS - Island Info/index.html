@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        <p><span>JS - Island</span></p>
+        <div class="back-to-menu">
+            <button onclick="location.href='../index.html'">Menu</button>
+        </div>
+    </nav>
+    
+    
+    <video autoplay muted loop class="background-video">
+
+        <source src="../JS - island Assets/vids/video[3].mp4" type="video/mp4">  
+        Your browser does not support the video tag.
+ 
+    </video>
+
+
+    <section class="home">
+      <div class="home-title">
+        <p><span class="home-title1">CREATION.</span> <br> <span class="home-title2">Purpose</span></p>
+      </div>
+      <div class="home-descr">
+        <p>
+          Я решил создать этот сайт, потому что не хотел просто загружать сырые JavaScript-файлы. Вместо этого мне захотелось оформить свои задания более красиво и профессионально. Сайт позволяет представить каждую задачу в едином пространстве с плавными переходами, видеофоном и удобной навигацией.
+          Такой подход делает проверку заданий не только проще, но и показывает мои навыки вёрстки, работы с интерфейсом и внимание к деталям. Мне было важно продемонстрировать, что я могу не просто написать код, а превратить его в полноценный пользовательский опыт — так, как это делают настоящие разработчики.
+        </p>
+      </div>
+    </section>
+
+
+     <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      document.body.classList.add('loaded');
+    }, 1000); // 2500ms = 2.5 seconds delay
+  });
+</script>
+</body>
+</html>

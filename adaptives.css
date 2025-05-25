@@ -1,0 +1,101 @@
+@media (max-width: 1500px){
+    body::before{
+        height: 120%;
+        max-height: 140%;
+    }
+}
+
+
+
+@media (max-width: 1025px){
+    body::before{
+    
+        padding: 0;
+        margin-left: 0px;
+        width: 120%;
+        overflow-y: auto;
+        
+    }
+    nav{
+        padding: 0;
+
+    }
+
+    nav p{
+        padding: 25px 120px;
+        
+    }
+
+    nav a{
+        display: none;
+    }
+
+    .nav-links{
+        position: relative;
+        right: 120px;
+        padding-left: 15px ;
+    }
+
+
+    .home{
+        padding: 0;
+        padding-left: 120px;
+    }
+
+
+    .home-descr{
+        
+        width: 170%;
+    }
+}
+
+
+@media (max-width: 480px){
+    nav p{
+        padding:0px;
+        padding: 15px;
+    }
+    
+    .nav-links{
+        position: relative;
+        right: 0;
+        padding: 15px;
+    }
+
+    .dropdown{
+        transform: scale(0.7);
+    }
+
+    .home{
+        padding: 0;
+        transform: scale(0.6);
+        position: relative;
+        right: 40px;
+        top: 0;
+        bottom: 0;
+    }
+
+    .home-descr{
+        
+        width: 250%;
+    }
+}
+
+@media (max-width: 395px){
+    body::before{
+        max-height: 100vh;
+    }
+    nav p{
+        padding-top: 25px;
+        padding-left: 25px;
+        transform: scale(0.9);
+    }
+
+    .home-descr{
+        width: 270%;
+    }
+
+    
+}
+
+

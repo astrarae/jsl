@@ -10,6 +10,7 @@
 @media (max-width: 1025px){
     *, *::before, *::after {
   box-sizing: border-box;
+        
     }
 
     
